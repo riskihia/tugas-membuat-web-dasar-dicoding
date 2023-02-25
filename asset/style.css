@@ -1,0 +1,140 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+hr {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+article h3 {
+  margin: 10px 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.15px;
+}
+body {
+  padding-inline: 10%;
+  font-size: 18px;
+}
+
+/* header */
+header {
+  display: flex;
+  background-color: #e3fdfd;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: sticky;
+  top: 0;
+}
+nav {
+  width: 40%;
+}
+.list-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+
+/* main */
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+#content {
+  flex: 4;
+  /* border: 1px solid red; */
+}
+img {
+  width: 300px;
+}
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fffbeb;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-inline: 2%;
+  }
+  header {
+    flex-direction: column;
+    padding-block-end: 5px;
+  }
+  nav {
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+  }
+}
+
+/* aside */
+aside {
+  background-color: #ffe7cc;
+  flex: 2;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  /* border: 1px solid red; */
+}
+.profile-img {
+  width: 150px;
+  border-radius: 1000px;
+}
+
+figcaption ul li {
+  margin-block: 10px;
+}
+
+span {
+  background-color: rgb(194, 194, 194);
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.fa-heart {
+  margin-inline-start: 20px;
+}
+.startLove {
+  animation-name: love;
+  animation-duration: 0.1s;
+}
+
+@keyframes love {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+/* footer */
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #e3fdfd !important;
+  color: black;
+  text-align: center;
+}
